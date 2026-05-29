@@ -3,6 +3,9 @@
 
 We are provided with a compiled binary containing intentional vulnerabilities and hidden features.
 
+## Folders
+`recon/` - Storage of all recon files. `_output` intdicates it is a command output. Other files are likely manually written. 
+
 ## Purpose of this repository
 - Record notes
 - Record screenshots and relevant data/snippets
