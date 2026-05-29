@@ -5,6 +5,8 @@ We are provided with a compiled binary containing intentional vulnerabilities an
 
 ## Folders
 `recon/` - Storage of all recon files. `_output` intdicates it is a command output. Other files are likely manually written. 
+`recon/binwalk` - Storage of binwalk-related queries
+`recon/sample_c` - Sample C program
 
 ## Purpose of this repository
 - Record notes
