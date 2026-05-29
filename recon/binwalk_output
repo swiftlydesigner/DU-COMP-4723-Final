@@ -1,7 +1,0 @@
-
-DECIMAL       HEXADECIMAL     DESCRIPTION
---------------------------------------------------------------------------------
-0             0x0             ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
-14784         0x39C0          ESP Image (ESP32): segment count: 8, flash mode: QUIO, flash speed: 40MHz, flash size: 1MB, entry address: 0x4500660d, hash: none
-17156         0x4304          Unix path: /home/kali/Desktop/final
-
