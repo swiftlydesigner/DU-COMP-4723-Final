@@ -1,0 +1,9 @@
+setvbuf(0x7f80131b05c0, nil, 2, 0)                                                                  = 0
+printf("System Shell v3.1.4\n> ")                                                                   = 22
+fgets(Hello
+"Hello\n", 128, 0x7f80131af8e0)                                                               = 0x7fff11e826c0
+strtok("Hello\n", " \n")                                                                            = "Hello"
+strcmp("Hello", "run")                                                                              = -42
+strcmp("Hello", "cmd")                                                                              = -27
+strcmp("Hello", "secret")                                                                           = -43
++++ exited (status 0) +++
