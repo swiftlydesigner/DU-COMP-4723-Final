@@ -31,7 +31,9 @@ void parse_command(char *d)
         token = strtok(0x0," \n");
                     /* Ensure the token after int exists */
         if (token != 0x0) {
-                    /* Call function e with arguments int and the third token. */
+                    /* Call function unsafe_string_dead_store (e) with arguments
+                       int and the third token. Int is the function 1=strcpy, 2=strncpy,
+                       3=snprintf. Target buffer size is 64. */
           unsafe_string_dead_store(strcmp_val,token);
         }
       }
