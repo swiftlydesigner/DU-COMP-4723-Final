@@ -1,10 +1,10 @@
 graph TD
-    main --> c
-    c --> e
-    c --> a
-    c --> h
-    i
-    j
-    k
-    l
-    m
+    main --> parse_command
+    parse_command --> unsafe_string_dead_store
+    parse_command --> exec_help_version_exit
+    parse_command --> write_secret_file
+    print_maintenance_top_of_hour
+    privilege_escalation
+    read_running_processes_on_comp
+    print_decrypted_string
+    read_flag_from_flag
