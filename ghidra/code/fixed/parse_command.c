@@ -1,3 +1,20 @@
+/*
+Key Findings:
+The biggest issue is the `secret` command. Anyone can type `secret` and trigger `write_secret_file()` 
+with no login, permission check, or authorization, which makes it look like a hidden debug command or 
+auth bypass.
+
+The `cmd` path also needs review because it passes user input into `exec_help_version_exit()`. 
+If that function runs shell commands or uses `system()`, `exec*()`, or `popen()`, 
+it could lead to command injection.
+
+The `run` path is risky because it uses `atoi()` and sends user-controlled input into 
+`unsafe_string_dead_store()`. Bad input can be misread, and the copy function may be unsafe depending 
+on the selected mode.
+
+No setuid flow or key leak is shown in this snippet, but `write_secret_file()`,
+`exec_help_version_exit()`, and `unsafe_string_dead_store()` should be checked closely.
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
